@@ -1,0 +1,12 @@
+ORG 0000H
+
+MOV TMOD,#01H
+AGAIN: MOV TL0,#00H
+       MOV TH0,#0EEH
+       SETB TR0
+BACK:  JNB TF0,BACK
+       CLR TR0
+       CPL P1.0
+       CLR TF0
+       SJMP AGAIN
+END

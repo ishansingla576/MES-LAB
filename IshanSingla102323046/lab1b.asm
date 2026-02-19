@@ -1,4 +1,0 @@
-ORG 0000H
-MOV A, #56H
-ADD A, #95H
-END
