@@ -1,0 +1,43 @@
+A51 MACRO ASSEMBLER  LAB5                                                                 02/19/2026 12:34:26 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN lab5.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE lab5.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+                       2     
+0000 758901            3     MOV TMOD,#01H
+0003 758A00            4     AGAIN: MOV TL0,#00H
+0006 758CEE            5            MOV TH0,#0EEH
+0009 D28C              6            SETB TR0
+000B 308DFD            7     BACK:  JNB TF0,BACK
+000E C28C              8            CLR TR0
+0010 B290              9            CPL P1.0
+0012 C28D             10            CLR TF0
+0014 80ED             11            SJMP AGAIN
+                      12     END
+A51 MACRO ASSEMBLER  LAB5                                                                 02/19/2026 12:34:26 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   0003H   A   
+BACK . . . . . . .  C ADDR   000BH   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+TF0. . . . . . . .  B ADDR   0088H.5 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,41 @@
+A51 MACRO ASSEMBLER  LAB2A                                                                01/29/2026 12:18:35 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN lab2a.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE lab2a.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 758130            2     MOV SP, #30H
+                       3     
+0003 7811              4     MOV R0, #11H
+0005 7912              5     MOV R1, #12H
+0007 7A13              6     MOV R2, #13H
+0009 7B14              7     MOV R3, #14H
+                       8     
+000B C000              9     PUSH 00H
+000D C001             10     PUSH 01H
+000F C002             11     PUSH 02H
+0011 C003             12     PUSH 03H
+0013 D007             13     POP 07H
+0015 D006             14     POP 06H
+0017 D005             15     POP 05H
+0019 D004             16     POP 04H
+                      17     END
+A51 MACRO ASSEMBLER  LAB2A                                                                01/29/2026 12:18:35 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+SP . . . . . . . .  D ADDR   0081H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

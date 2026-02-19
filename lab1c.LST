@@ -1,0 +1,31 @@
+A51 MACRO ASSEMBLER  LAB1C                                                                01/29/2026 12:04:14 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN lab1c.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE lab1c.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 75D018            2     MOV PSW, #18H
+0003 7805              3     MOV R0, #05H
+0005 7905              4     MOV R1, #05H
+0007 7A05              5     MOV R2, #05H
+0009 7B05              6     MOV R3, #05H
+                       7     END
+A51 MACRO ASSEMBLER  LAB1C                                                                01/29/2026 12:04:14 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+PSW. . . . . . . .  D ADDR   00D0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
