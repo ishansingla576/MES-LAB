@@ -1,0 +1,2 @@
+Dependencies for Project 'ARM_main', Target 'Target 1': (DO NOT MODIFY !)
+F (.\lab6c.asm)(0x69D753B1)(--cpu ARM7TDMI --bi --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include --list "lab6c.lst" --xref -o "lab6c.o" --depend "lab6c.d")

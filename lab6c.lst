@@ -1,0 +1,62 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             PRG, CODE, READONLY
+    2 00000000                 ENTRY
+    3 00000000         MAIN
+    4 00000000 E59F0004        LDR              R0, NUM1
+    5 00000004 E59F1004        LDR              R1, NUM2
+    6 00000008 E0802001        ADD              R2, R0, R1
+    7 0000000C         
+    8 0000000C                 AREA             PRG, DATA, READONLY
+    9 0000000C 00000012 
+                       NUM1    DCD              &00000012
+   10 00000010 00000004 
+                       NUM2    DCD              &00000004
+   11 00000014                 END
+Command Line: --debug --xref --bi --apcs=interwork --depend=lab6c.d -olab6c.o -
+IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include --predefine="__EVAL SETA 1" -
+-list=lab6c.lst lab6c.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+MAIN 00000000
+
+Symbol: MAIN
+   Definitions
+      At line 3 in file lab6c.asm
+   Uses
+      None
+Comment: MAIN unused
+NUM1 0000000C
+
+Symbol: NUM1
+   Definitions
+      At line 9 in file lab6c.asm
+   Uses
+      At line 4 in file lab6c.asm
+Comment: NUM1 used once
+NUM2 00000010
+
+Symbol: NUM2
+   Definitions
+      At line 10 in file lab6c.asm
+   Uses
+      At line 5 in file lab6c.asm
+Comment: NUM2 used once
+PRG 00000000
+
+Symbol: PRG
+   Definitions
+      At line 1 in file lab6c.asm
+   Uses
+      None
+Comment: PRG unused
+4 symbols
+335 symbols in table

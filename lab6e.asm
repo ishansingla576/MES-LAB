@@ -1,0 +1,7 @@
+		AREA PRG, CODE, READONLY
+		ENTRY
+MAIN
+		MOV R1, #15
+		MVN R0, R1
+		
+		END

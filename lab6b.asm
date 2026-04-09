@@ -1,0 +1,8 @@
+		AREA PRG, CODE, READONLY
+		ENTRY
+MAIN
+		MOV R1, #0X7fffffff
+		MOV R2, #0X1
+		ADDS R0, R1, R2
+		
+		END
