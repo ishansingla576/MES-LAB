@@ -1,0 +1,59 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             PROGRAM, CODE, READONLY
+    2 00000000                 ENTRY
+    3 00000000         MAIN
+    4 00000000 E59F1020        LDR              R1, VALUE
+    5 00000004 E4912004        LDR              R2, [R1], #4
+    6 00000008 E4913004        LDR              R3, [R1], #4
+    7 0000000C E0924003        ADDS             R4, R2, R3
+    8 00000010 E4915004        LDR              R5, [R1], #4
+    9 00000014 E4916004        LDR              R6, [R1], #4
+   10 00000018 E0A57006        ADC              R7, R5, R6
+   11 0000001C E4814004        STR              R4, [R1], #4
+   12 00000020 E5817000        STR              R7,[R1]
+   13 00000024 E0814003        ADD              R4, R1, R3
+   14 00000028         
+   15 00000028                 AREA             PROGRAM, DATA, READONLY
+   16 00000028 00001000 
+                       VALUE   DCD              &00001000
+   17 0000002C                 END
+Command Line: --debug --xref --bi --apcs=interwork --depend=lab7.d -olab7.o -IC
+:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --l
+ist=lab7.lst lab7.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+MAIN 00000000
+
+Symbol: MAIN
+   Definitions
+      At line 3 in file lab7.asm
+   Uses
+      None
+Comment: MAIN unused
+PROGRAM 00000000
+
+Symbol: PROGRAM
+   Definitions
+      At line 1 in file lab7.asm
+   Uses
+      None
+Comment: PROGRAM unused
+VALUE 00000028
+
+Symbol: VALUE
+   Definitions
+      At line 16 in file lab7.asm
+   Uses
+      At line 4 in file lab7.asm
+Comment: VALUE used once
+3 symbols
+334 symbols in table
